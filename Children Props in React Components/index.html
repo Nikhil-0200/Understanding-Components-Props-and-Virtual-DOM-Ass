@@ -17,6 +17,7 @@
     
     function Gallery({children}){
 
+        // styling gallery by inline style method. 
         const galleryStyle = {
             display: "grid",
             gridTemplateColumns: "repeat(3, 1fr)",
@@ -32,6 +33,8 @@
 
     function App(){
         return(
+            // passing Gallery component here to display it into root
+            // And inside Gallery storing images as a child of Gallery
             <Gallery>
                 <img src="https://cdn.pixabay.com/photo/2022/01/29/09/01/bird-6976834_1280.jpg" alt=""/>
                 <img src="https://cdn.pixabay.com/photo/2023/08/18/15/02/cat-8198720_1280.jpg" alt=""/>
